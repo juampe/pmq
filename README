@@ -1,0 +1,28 @@
+pmq Juan Pedro Paredes Caballero <juampe@iquis.com>
+
+pmq show information about MQSeries objects (queues and channels). It's very usefull for tracking transactions due to it notice changes in counters.
+
+mqcommand
+Request  comands to QMANAGER defined inside the script
+pmq expect that it is placed in /opt/mqm/bin/mqcommand
+
+pmq muestra informacion de objetos de MQSeries (colas y canales). Es muy util para seguimiento y verificacion de transaccciones ya que indica cuando han cambiado los contadores
+
+mqcommand
+Ejecuta comandos en el QMANAGER especificado en el script
+pmq espera que se aloje en /opt/mqm/bin/mqcommand
+
+Uso
+Si no se especifica nada muesta el estado de los canales.
+Uso: pmq [OPCION]...
+  -h, --help    Informa del uso de pmq
+  -c, --channel Informa del estado de las canales (por defecto)
+  -q, --queue   Informa del estado de las colas con mensajes
+  -r, --report  Informe para monitorizacion
+  -t, --times   Muestra la inforacion x veces (1 por defecto, -1 siempre)
+  -w, --wait    Espera x segundos para refrescar (5 por defecto o mayor que 5)
+EOF
+
+mqcommand 
+Ejecuta comandos en el QMANAGER especificado en el script
+pmq espera que se aloje en /opt/mqm/bin/mqcommand

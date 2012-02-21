@@ -1,0 +1,5 @@
+#!/bin/bash
+QMANAGER="CHANGEME"
+cd /opt/mqm/bin
+echo "$*"|./runmqsc $QMANAGER
+
